@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# 🚀 Ignite Feed - React + TypeScript | Caio <> Rocketseat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Ignite Feed**, um projeto desenvolvido na formação React.js da Rocketseat! 🧑‍💻 Este aplicativo é uma simulação de feed de posts, onde usuários podem interagir com comentários. Foi construído com **React**, **TypeScript** e **CSS Modules** para garantir performance, organização e estilização moderna. 🎨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [CSS Modules](https://github.com/css-modules/css-modules)  
+- [Phosphor Icons](https://phosphoricons.com/)  
+- [date-fns](https://date-fns.org/)  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Instalação e Uso
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/caiopmoreno/study-rocketseat-ignite.git
+   cd study-rocketseat-ignite
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   # ou
+   yarn
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. **Inicie o servidor de desenvolvimento**:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Acesse o aplicativo no navegador:
+   ```
+   http://localhost:5173
+
+   ```
+
+---
+
+## 🖼️ Funcionalidades
+
+- **Publicação de Posts:** Visualize posts fictícios com formatação estruturada.
+- **Comentários Dinâmicos:** Adicione, valide e delete comentários de forma interativa.
+- **Feedback em Tempo Real:** Veja a data e o horário da publicação, calculados com `date-fns`.
+- **Interface Responsiva:** Design moderno e adaptável a diferentes dispositivos.
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença [MIT](./LICENSE).  
+
+Feito com ❤️ por **[Caio Moreno](https://github.com/caiopmoreno)** estudando React.js na **[Rocketseat](https://rocketseat.com.br)**
